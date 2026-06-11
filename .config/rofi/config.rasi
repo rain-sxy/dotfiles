@@ -1,0 +1,87 @@
+@import ".cache/wal/colors-rofi-dark.rasi"
+
+* {
+  font: "JetBrainsMono NF 12";
+}
+
+#window {
+  padding: 0;
+  margin: 0;
+  width: 600;
+  height: 400;
+}
+
+#listview {
+  padding: 0;
+  spacing: 0;
+}
+
+#scrollbar {
+  width: 0;
+  handle-width: 0;
+}
+
+#element {
+    border: 0;
+    padding: 0;
+}
+
+#inputbar {
+  padding: 5px;
+  margin: 10px;
+  border: 1px;
+  border-color: @selected-urgent-background;
+}
+
+#element-text, element-icon {
+    background-color: inherit;
+    text-color:       @selected-urgent-background;
+    padding: 5px 0px 5px 5px;
+}
+
+#element.normal.normal {
+    background-color: @normal-background;
+    text-color: @normal-foreground;
+}
+
+#element.normal.urgent {
+    background-color: @urgent-background;
+    text-color: @urgent-foreground;
+}
+
+#element.normal.active {
+    background-color: @active-background;
+    text-color: @active-foreground;
+}
+
+#element.selected.normal {
+  background-color: transparent;
+  border: 0px 0px 1px 0px;
+  border-color: @selected-urgent-background;
+  text-color: @selected-normal-foreground;
+}
+
+#element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color: @selected-urgent-foreground;
+}
+
+#element.selected.active {
+    background-color: @selected-active-background;
+    text-color: @selected-active-foreground;
+}
+
+#element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color: @alternate-normal-foreground;
+}
+
+#element.alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color: @alternate-urgent-foreground;
+}
+
+#element.alternate.active {
+    background-color: @alternate-active-background;
+    text-color: @alternate-active-foreground;
+}
