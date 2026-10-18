@@ -1,0 +1,9 @@
+#!/bin/bash
+#This script moves the mouse pointer to the middle of a valid focused window
+
+eval $(xdotool getwindowfocus getwindowgeometry --shell)
+
+if [ $X != -1  ]
+then
+xdotool mousemove --window $(xdotool getwindowfocus) $((WIDTH/2)) $((HEIGHT/2))
+fi
