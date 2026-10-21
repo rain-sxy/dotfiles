@@ -1,6 +1,6 @@
 config.load_autoconfig()
 c.url.searchengines = {
-    'DEFAULT': 'https://lite.duckduckgo.com/lite?q={}',
+    'DEFAULT': 'https://duckduckgo.com?q={}',
     '!yt': 'https://www.youtube.com?q={}',
     '!mail': 'https://mail.google.com?q={}',
     '!git': 'https://github.com?q={}'
